@@ -1,0 +1,5 @@
+<!ELEMENT autor (titulo, capitulo+)>
+	<!ATTLIST autor libro CDATA #IMPLIED>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT capitulo (#PCDATA)>
+	<!ATTLIST capitulo numero CDATA #REQUIRED>

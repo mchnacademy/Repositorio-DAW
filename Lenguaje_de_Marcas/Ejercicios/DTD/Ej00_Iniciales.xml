@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE autor SYSTEM "autor.dtd">
+<autor libro="anonimo">
+	<titulo>libro de ejemplo</titulo>
+	<capitulo numero="1">
+		Escriba aquí el contenido del capítulo 1.
+	</capitulo>
+	<capitulo numero="2">
+		Escriba aquí el contenido del capítulo 2.
+	</capitulo>
+</autor>

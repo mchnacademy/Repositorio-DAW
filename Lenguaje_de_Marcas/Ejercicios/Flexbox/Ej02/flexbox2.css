@@ -1,0 +1,52 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+header
+{
+	background-color:rgb(29, 38, 38);
+	color: white;
+	text-align: center;
+	width: 100%;
+	padding: 50px;
+}
+
+nav
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	background-color:#CCC;
+	text-align: left;
+	overflow: auto;
+	/*width: 100%;*/
+	gap: 10px; /* space between nav items (images) */
+}
+
+nav a
+{
+	color:#363636;
+	text-decoration: none;
+	font-size: 1, 5em;
+	text-align: center;
+	/*flex: 1;*/
+}
+
+/* Style images inside the nav: dotted border and small padding */
+nav img
+{
+	border: 2px dotted #555;
+	display: block; /* avoid inline gap issues */
+}
+
+nav a:hover
+{
+	background-color:#363636;
+	color: #CCC;
+	font-size: 1, 5em;
+}
