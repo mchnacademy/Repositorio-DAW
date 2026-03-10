@@ -1,0 +1,105 @@
+body{
+    /*Eliminamos margenes y paddings por defecto*/
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* Aseguramos que el body ocupe toda la pantalla */
+    height: 100vh; /* 100% del viewport */
+    width: 100vw;  /* 100% del ancho del viewport */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+       /* Fondo de pantalla */
+    /* OPCIÓN 1
+    background-color: #eee; */
+    /* OPCIÓN 2 */
+    background-image: url('images/background/fondo1.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+header{
+    padding: 30px;
+    /* background-color: #287276; */
+    background-image: url('images/background/encabezado.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-size: 1em;
+}
+nav{
+    display: flex;
+    justify-content: flex-start;
+    background-color: #5cc0f5;
+    /* background-image: url('images/background/nav.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+nav a{
+    flex-wrap: wrap;
+    color: #555;
+    padding: 15px;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+nav a:hover{
+    background-color: rgb(102, 102, 177);
+    color: #fff;
+}
+.listado{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.galery{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.galery h2{
+    width: 100%;
+    /* text-align: center; */
+    color: darkblue;
+}
+.galery img{
+    margin: 10px;
+    padding: 15px;
+    border: 3px solid rgb(39, 80, 216);
+    border-radius: 200px;
+}
+.caja{
+    width: 250px;
+    min-height: 250px;
+    background-color: white;
+    margin: 15px;
+    /*Aplicamos borde con sombra a la caja*/
+    box-shadow:0 4px 10px 0 rgba(0,0,0,5),0 4px 20px 0 rgba(0,0,0,5);
+}
+.caja-cabecera{
+    height: 80px;
+    /* Aplicamos estilo al Fondo, color de fondo, insertamos el icono de css, 
+    lo dejamos centrado y hacemos que no se repita*/
+    background-color: #204056;
+    background-image: url('images/iconos/CSS.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    /*  Lo podemos poner en una sola línea así:  background: #204056 url('images/iconos/CSS.png') center no-repeat; */
+    /*Ajustamos el tamaño de la imagen*/
+    background-size: 40px;
+}
+.caja-cuerpo{
+    height: 140px;
+    background-color: antiquewhite;
+    font-size: 0.7em;
+    padding: 5px;
+    overflow: auto;
+    color: #555;
+    border-bottom: 5px solid rgb(168, 157, 143); 
+}
+.caja-pie{
+    height: 30px;
+    background-color: rgb(232, 219, 201);
+    text-align: right;
+    overflow: hidden;
+    
+}
+
+

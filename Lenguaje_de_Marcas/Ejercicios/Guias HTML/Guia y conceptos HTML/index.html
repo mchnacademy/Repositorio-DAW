@@ -1,0 +1,181 @@
+<!DOCTYPE html> <!--Es el inicio de la estructura de la PW, usa ! para iniciarla-->
+<html lang="en"> <!--Esta etiqueta es la de html para traducir el lenguaje, "es" es español, y "en" es ingles-->
+
+<head> <!--Esta es la etiqueta de cabecera, donde ponemos el titulo de nuestra pagina web.-->
+
+    <title>Mi primera pagina web.</title>
+    <!--Es el titulo de la pagina web que hemos creado, solo habra uno en cada pagina.-->
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+
+<body> <!--Es el cuerpo de la pagina web, donde va el contenido de la pagina web-->
+
+    <table style="width: 500px;"> <!--Esta etiqueta sirve para hacer una tabla.-->
+
+        <thead> <!--Esta etiqueta sirve para agrupar elementos de las cabeceras de las tablas.-->
+            <tr> <!--Es etiqueta sirve para insertar filas a la tabla.-->
+
+                <th>Productos</th> <!--Esta etiqueta sirve para indicar una cabecera-->
+                <th>Precios</th> <!--Genera columnas.-->
+
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+
+                <td>Saludo.</td> <!--Esta etiqueta sirve para definir elementos dentro de la tabla.-->
+                <td>Gratis</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Nutela XXL.</td>
+                <td>20,95€</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Consolador Rosa.</td>
+                <td>69,69€</td>
+
+            </tr>
+        </tbody>
+
+        <tfoot> <!--Para poner un pie a la tabla, es decir, una ultima celda.-->
+            <td></td>
+            <td>Total: 90,64€</td>
+        </tfoot>
+
+    </table>
+
+
+    <ul>
+
+        <li>Elemento 1.</li>
+        <!--Esta etiqueta sirve para nombrar un item de la lista, basicamente un elemnto dentro de la lista (ul)-->
+        <li>Elemento 2.</li>
+        <li>Elemento 3.</li>
+        <li>Elemento 4.</li>
+
+    </ul>
+    <!--Esta etiqueta sirve para hacer una lista no ordenada, para mostrar elementos. -->
+    <!--Cada vez que agreguemos elementos saldran con un punto en negro.-->
+
+    <ol>
+
+        <li>Elemento 1.</li>
+        <li>Elemento 2.</li>
+        <li>Elemento 3.</li>
+        <li>Elemento 4.</li>
+
+    </ol>
+    <!--Esta etiqueta es para poner listas ordenadas por numeros.-->
+
+    <ol>
+
+        <li value="200">Elemento 1.</li>
+        <!--Si le pones value haces que la lista ordenada empieze de un numero determinado.-->
+        <li>Elemento 2.</li>
+        <li>Elemento 3.</li>
+        <li>Elemento 4.</li>
+
+    </ol>
+
+    <ol>
+
+        <li>Elemento 1.</li>
+        <!--Si le pones value haces que la lista ordenada empieze de un numero determinado.-->
+        <li>Elemento 2.</li>
+        <li>Elemento 3.</li>
+        <li>
+            <ol>
+                <li style="list-style-type: lower-alpha;">Subelemento 1.</li>
+                <!--Es posible meter una lista dentro de "li, y asi sucesivamente."-->
+                <li style="list-style-type: lower-greek;">Subelemento 2.</li>
+                <!--El style nos permite cambiar los numeros normales por numeros romanos o letras para ordenar elementos de una mejor manera.-->
+                <li style="list-style-type: lower-roman;">Subelemento 3.</li>
+            </ol>
+        </li>
+
+    </ol>
+
+
+    <form action="/formulario" method="POST">
+        <!--Esta etiqueta sirve para poner dentro etiquetas que recopilen informacion del usuario.-->
+        <!--Post es para que no se vean los datos del formulario cuando los mandemos-->
+        <label for="nombre">Nombre:</label>
+        <!--Esta etiqueta sirve para solicitar un dato del usuario, el for sirve para determinar el identificador del campo.-->
+        <input value="Dennis" type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" /> <br>
+        <!--El value es para que aparezca un valor por defecto en la caja de texto-->
+        <!--Sirve para poner el foco en el label, es decir, que nos permita escribir mas o menos.-->
+        <!--El name del imput sirve para que el servidor interprete los datos, es la llave.-->
+        <!--Placeholder nos sirve para saber que propiedad debemos poner.-->
+        <!--El type hace que el input se comporte de manera diferente segun lo que pongamos, por ejemplo text, button, etc... -->
+        <label for="apellido">Apellido:</label>
+        <input value="Soleto" type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido" />
+        <br>
+        <label for="comentario">Comentario:</label>
+        <textarea cols="50" rows="10" id="comentario" placeholder="Ingrese su comentario" name="comentario"></textarea>
+        <!--El cols son las columnas que tendra el recuadro de comentario, y rows son las filas.-->
+        <br>
+
+        <button type="button">Tipo Boton</button>
+        <!--El boton button debe ser especificado con JS, no lo usaremos todavia.-->
+        <button type="reset">Tipo Reset</button>
+        <!--El boton de tipo reset resetea los datos del formulario dejando los valores predeterminados que tenia establecidos.-->
+        <button type="submit">Tipo Submit</button>
+        <!--El boton submit enviara el formulario a una direccion segun el metodo que que eleijamos (POST)-->
+        <!--Dentro del boton se puede incluir una imagen.-->
+
+    </form>
+        <h1>Mi primer heading.</h1>
+        <!--Sirve para añadir una cabecera a nuestro contenido de la PW, SOLO para indicar cabeceras de nuestro contenido-->
+        <h2>Mi segundo heading.</h2>
+        <!--Sirve para añadir subtitulos, solo para indicar cabeceras o sub cabeceras de nuestro contenido-->
+        <h3>Mi tercer heading.</h3>
+        <!--Sirve para añadir subtitulos, solo para indicar cabeceras o sub cabeceras de nuestro contenido-->
+        <h4>Mi cuarto heading.</h4>
+        <!--Sirve para añadir subtitulos, solo para indicar cabeceras o sub cabeceras de nuestro contenido-->
+        <h5>Mi quinto heading.</h5>
+        <!--Sirve para añadir subtitulos, solo para indicar cabeceras o sub cabeceras de nuestro contenido-->
+        <h6>Mi primer heading.</h6>
+        <!--Sirve para añadir subtitulos, solo para indicar cabeceras o sub cabeceras de nuestro contenido-->
+        <!--Solo hay hasta h6, y no se pueden utilizar para decoracion, solo para añadir cabeceras o subcabeceras, ojo!-->
+
+    <p1>Mi primer parrafo de pagina, UWU.</p1>
+    <!--Esta etiqueta crea un parrafo para escribir contenido, si quiero poner mas texto a parte solo debo crear un p2, p3, y etc...-->
+    <hr> <!--Esta etiqueta crea una linea que separa contenidos o textos, para crear secciones.-->
+    <h2>Me gustan las goticas, XD.</h2>
+    <p2>Este texto es <span style="color:brown"> mucho mas largo </span>
+        y es para mostrar <br> <!--La etiqueta br es para hacer un salto de linea-->
+        la etiqueta de span!</p2>
+    <!--Esta estiqueta sirve para identificar algun texto o etiqueta html dentro de otras etiquetas, aun se deberia usar con CSS.-->
+
+    <p><a target="_blank" href="https://www.google.com">Ir a google</a></p>
+    <!--Esta etiqueta sirve para que podamos navegar, es decir, para añadirle un enlace que nos lleve a otro sitio web, pero debemos darle la URL exacta del lugar.-->
+    <!--El href es para poner la URL, mientras que el target sirve para que al darle al enlace se abra otra pagina en blanco si que se altere la nuestra.-->
+
+
+    <img src="img/Dorothy sexy.jpg" width="300" height="300" />
+    <!--Si la imagen que vamos a referenciar esta en una carpeta debemos poner el nombre de la carpeta segudo de una barra para que se pueda utilizar.-->
+    <!--Esta etiqueta es para agregar imagenes o textos alternativos, y necesitamos tener una foto guardada en la misma carpeta para poder utilizarla.-->
+    <!--El width sirve para modificar el ancho de una imagen, y el heigth modifica la altura , se hace en px, y en el src se pone la direccion de la imagen.-->
+
+
+
+
+
+</body>
+
+
+</html> <!--Es la etiqueta de cierre de la pagina web, es lo ultimo que se pone.-->

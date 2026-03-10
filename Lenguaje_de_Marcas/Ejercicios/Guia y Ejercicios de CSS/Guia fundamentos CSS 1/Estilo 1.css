@@ -1,0 +1,41 @@
+/*Si quieres darle estilo a todos los elemento de un tipo, por ejemplo a los parrafos (p), pones el
+nombre del elemento seguido de  llaves, y dentro pones los estilos que quieras.*/
+
+/*Si lo que quieres es modificar todo, en plan, todos los elemntos de una hojas pon * seguido de llaves
+y dentro los estilos que quieras incorporar.Si poner algun estilo mas especifico como el de una etiqueta
+en particular este si se volvera a cambiar, piensa que * es algo general y no tiene tanta importancia.*/
+
+/*Tambien puedes incluir clases o id en los elemntos o etiquetas para seleccionarlos de forma mas segura
+ y especifica, solo recuerda que el id solo funciona con un elemnto, y que class puede hacerlo con varios
+ a pesar de tener la misma clase, aunque tambien puede con clases diferente.
+ El ide se pone con # seguido del nombre de id, y la clse con . seguido del nombre de la clase, 
+ o si tienes varios elementos con el mismo class, tambien puedes poner el nombre del elemento. seguido
+ del nombre de la clase*/
+
+/*Recuerda que la hoja de estilos y la de HTML deben estar en la misma carpeta para que el enlace funcione
+ correctamente.*/
+
+/*A continua cion podre unos cuantos tipos de estilos para orientar los proximos ejemplos:
+
+font-family:             ;  Hace que se cambien la fuente de escritura.
+text-align: center       ;  Hace que el texto se centre, dependiendo del valor que pongas.
+color:                   ;  Hace que el color de las letras se cambie.
+font-size:     px        ;  Hace que el tamañom de la letra aumente o disminuya.
+background-color:        ;  Hace que el fondo cambie de color.
+border-collapse: collapse;  Hace que colapse el borde para que la tabla se vea bien.
+width: 50%               ;  Hace que se modifique el ancho de la tabla.
+margin: 20 auto          ;  Hace que la tabla se centre (Aplica un borde alrededor de la tabla
+                            o sus elementos (filas, celdas, etc).
+padding: px              ;  Hace un margen interior.
+border: px               ;  Hace un borde de un color.
+caption-side: bottom     ;  Hace que la leyenda este abajo.
+font-style: italic       ;  Cambia el estilo del caption a italica. (Esto estaba en el caption).
+
+/*Si pongo un elemento y seguido  con un espacio el nombtre de un elemento dentro del elemeneto anterior solo cambia ese:
+section h2{}  ahi solo cambiaria todos los h2 de los sections.*/
+
+/*Si pones un > en vez de un espacio solo afecta si es hijo directo, es decir si esta dentro del elemento,
+no vale si ese elemento esta ttambien dentro de otra etiqueta*/
+
+
+

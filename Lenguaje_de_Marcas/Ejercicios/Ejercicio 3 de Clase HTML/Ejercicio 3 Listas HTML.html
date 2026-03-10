@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3 de HTML (Listas)</title>
+</head>
+
+<body>
+
+    <section>
+        <header>
+            <h1>EJEMPLO LISTA DESORDENADA CON ASIGNATURAS DE 1º DAW.</h1>
+        </header>
+
+        <ul>
+            <li><mark><strong>Lenguaje de marcas y SGI.</strong></mark>¡MI FAVORITA!</li>
+            <li>Sistemas informaticos.</li>
+            <li>Bases de datos.</li>
+            <li>Programacion.</li>
+            <li>Entornos de desarrollo.</li>
+            <li>IPE: Itinerario personal.</li>
+        </ul>
+    </section>
+
+    <section>
+        <header>
+            <h1>EJEMPLO LISTA ORDENADA NUMERICA EMPEZANDO EN 3.</h1>
+        </header>
+
+        <ol>
+            <li value="3">Elemento 1.</li> <!--El value sirve para nmarcar desde que valor se empieza a contar.-->
+            <li>Elemento 2.</li>
+            <li>Elemento 3.</li>
+        </ol>
+    </section>
+
+    <section>
+        <header>
+            <h1>EJEMPLO LISTA ORDENADA CON LETRAS MAYUSCULAS EN ORDEN INVERSO.</h1>
+        </header>
+
+        <ol type="A" reversed> <!--El type sirve para seleccionar el tipo de marcador, y reversed es para ponerlo en orden inverso.-->
+            <li>Elemento 1.</li>
+            <li>Elemento 2.</li>
+            <li>Elemento 3.</li>
+        </ol>
+    </section>
+
+    <section>
+        <header>
+            <h1>EJEMPLO LISTA DE DEFINICION PARA LENGUAJES DE MARCAS.</h1>
+        </header>
+
+        <dl> <!--Esta etiqueta es para listas de definicion.-->
+            <dt><strong>(Standart Generalized Markup Lenguage):</strong></dt>
+            <!--Esta etiqueta sirve para encabezados de esta lista.-->
+            <br>
+            <dd>
+                Es un lenguaje de marcado utilizado para definir otros lenguajes
+                de marcado como: HTML o XML.Proporciona una forma de estructurar
+                datos para describir la diferencia.
+            </dd> 
+            <!--Esta etiqueta sirve para poner la definicion del concepto de una de estas listas.-->
+            <br>
+
+
+            <dt><strong>(eXtensible Markup Language):</strong></dt> <br>
+            <dd>
+                Es un lenguaje de marcas extensible que permite definir
+                tus propias etiquetas para estructurar, almacenar y transportar
+                datos de forma legible para humanos y máquinas.
+            </dd> <br>
+
+
+            <dt><strong>(HyperText Markup Language):</strong></dt> <br>
+            <dd>
+                Es el lenguaje de marcado estándar para crear la estructura
+                y el contenido de las páginas web, utilizando etiquetas para
+                definir elementos como títulos.
+            </dd> <br>
+
+
+            <dt><strong>(Cascading Style Sheets):</strong></dt> <br>
+            <dd>
+                Es un lenguaje de hojas de estilo que trabaja junto a los
+                lenguajes de marcado para definir la presentación visual.
+            </dd> <br>
+        </dl>
+    </section>
+
+    <section>
+        <header>
+            <h1>EJEMPLO LISTAs ANIDADAS.</h1>
+        </header>
+
+        <ul type="square"> <!--Square pone en listas desordenadas cuadrados en vez de puntos.-->
+            <li>
+                Frutas:
+                <ol>
+                    <li>
+                        Manzana
+                        <ul type="square">
+                            <li>Reineta</li>
+                            <li>Royal</li>
+                            <li>Golden</li>
+                        </ul>
+                    </li>
+                    <li>Piña</li>
+                    <li>Banana</li> <br>
+                </ol>
+
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                Carnes:
+                <ol>
+                    <li>
+                        Salmon
+                        <ul>
+                            <li>Alto</li>
+                            <li>Bajo</li>
+                        </ul>
+                    </li>
+                    <li>Entrecot</li>
+                    <li>Morcillo</li> <br>
+                </ol>
+            </li>
+        </ul>
+
+        <ul type="circle"> <!--Lo mismo que square pero con un circulo en blanco.-->
+            <li>
+                Verduras:
+            </li>
+            <ol>
+                <li>Brocoli</li>
+                <li>Puerro</li>
+                <li>Cebolla</li>
+            </ol>
+            </li>
+        </ul>
+    </section>
+
+
+</body>
+
+</html>

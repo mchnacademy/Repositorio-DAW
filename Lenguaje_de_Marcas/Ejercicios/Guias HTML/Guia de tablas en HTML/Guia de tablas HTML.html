@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Tablas HTML.</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>GUIA DE TABLAS.</h1>
+    </header>
+
+    <table> <!--Esta etiqueta es para crear una tabla.-->
+
+        <thead> <!--Esta etiqueta sirve para agrupar cabeceras de las tablas.-->
+            <tr> <!--Es etiqueta sirve para insertar filas a la tabla.-->
+
+                <th colspan="1">Productos</th> <!--Define una celda de encabezado.-->
+                <th rowspan="1">Precios</th> <!--Define una celda de encabezado.-->
+                <!--Colspan sirve para agrandar el ancho de una celda.-->
+                <!--Rowspan sirve para agrandar el alto de una celda.-->
+            </tr>
+        </thead>
+
+        <tbody> <!--Agrupa el cuerpo de la tabla, es decir, las filas que contienen los datos.-->
+            <tr>
+
+                <td>Saludo.</td> <!--Define una celda de datos dentro de una fila, lo que hay dentro del hueco .-->
+                <td>Gratis</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Nutela XXL.</td>
+                <td>20,95€</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Consolador Rosa.</td>
+                <td>69,69€</td>
+
+            </tr>
+        </tbody>
+
+        <tfoot> <!--Para poner un pie a la tabla, es decir, una ultima celda.-->
+            <td></td>
+            <td>Total: 90,64€</td>
+        </tfoot>
+
+    </table>
+
+
+
+
+    </table>
+
+</body>
+
+</html>
+
+
+<!--Estilos de <Table>
+
+width: Define el ancho total de la tabla.
+
+border-collapse: Controla si los bordes de las celdas se colapsan en uno
+solo o se mantienen separados.
+
+border-spacing: Define el espacio entre los bordes de las celdas cuando
+los bordes no están colapsados.
+
+background-color: Cambia el color de fondo de toda la tabla.
+
+table-layout: Controla el diseño de la tabla. Puede ser:
+➢ auto: Las columnas se ajustan al contenido.
+➢fixed: Todas las columnas tienen el mismo ancho.
+
+-->
+
+<!--Estilo para filas <tr>
+
+background-color: Aplica un color de fondo a una fila completa.
+
+nth-child: Para alternar colores de fondo en las filas (efecto de "zebra").
+
+hover: Cambia el estilo cuando el puntero pasa sobre la fila.
+
+-->
+
+<!--Estilos para encabezados <th>
+
+text-align: Alinea el texto dentro de las celdas de encabezado.
+font-weight: Cambia el grosor de la fuente.
+background-color: Aplica un color de fondo a los encabezados.
+padding: Define el espacio interior entre el contenido y el borde de la celda.
+border: Aplica un borde alrededor de las celdas de encabezado.
+
+-->
+
+<!--Estilos para celdas de datos <td>
+
+text-align: Alinea el texto dentro de las celdas de datos (por
+ejemplo, izquierda, derecha o centro).
+
+vertical-align: Alinea el contenido verticalmente dentro de las
+celdas.
+
+padding: Define el espacio interior dentro de las celdas.
+
+border: Aplica bordes a las celdas.
+
+white-space: Controla cómo se maneja el contenido de la celda si
+excede su ancho. Evita que el contenido se corrompa.
+
+-->
+
+<!--Estilo para bordes
+
+border: Aplica un borde alrededor de la tabla o sus elementos
+(filas, celdas, etc.).
+
+border-collapse: Hace que los bordes de las celdas se colapsen
+en un solo borde compartido.
+
+border-spacing: Define la distancia entre los bordes de las
+celdas si los bordes no están colapsados.
+
+-->
+
+<!--Estilos para el <tfoot>
+
+background-color: Cambia el color de fondo del pie de la
+tabla.
+
+text-align: Alinea el texto en las celdas del pie de la tabla.
+
+-->
+
+<!--Estilo para columnas <col> <colgroup>
+
+background-color: Aplica un color de fondo a una columna
+completa.
+
+width: Define el ancho de una columna completa
+
+-->
+
+
+
+
+
+
+
+

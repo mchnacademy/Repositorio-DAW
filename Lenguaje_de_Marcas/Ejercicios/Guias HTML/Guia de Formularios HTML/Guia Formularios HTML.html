@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="/formulario" method="POST">
+        <!--La etiqueta <form> sirve para poner dentro etiquetas que recopilen informacion del usuario.-->
+        <!--Post es un metodo de envio, es mas seguro que GET.-->
+        <!--El atributo action sirve para especificar la URL donde se enviaran los datos del formulario.-->
+
+        <label for="nombre">Nombre:</label>
+        <!--La etiqueta label sirve para solicitar un dato del usuario, el for sirve para determinar el identificador del campo.-->
+        <input value="Dennis" type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" /> 
+        <!--El value es para que aparezca un valor por defecto en la caja de texto-->
+        <!--Sirve para poner el foco en el label, es decir, que nos permita escribir mas o menos.-->
+        <!--El name del imput sirve para que el servidor interprete los datos, es la llave.-->
+        <!--Placeholder nos sirve para saber que propiedad debemos poner.-->
+        <!--El type hace que el input se comporte de manera diferente segun lo que pongamos, por ejemplo text, button, etc... -->
+
+        <label for="apellido">Apellido:</label>
+        <input value="Soleto" type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido" />
+
+        <label for="comentario">Comentario:</label>
+        <textarea cols="50" rows="10" id="comentario" placeholder="Ingrese su comentario" name="comentario"></textarea>
+        <!--El cols son las columnas que tendra el recuadro de comentario, y rows son las filas.-->
+        <br>
+
+        <button type="button">Tipo Boton</button>
+        <!--El boton button debe ser especificado con JS, no lo usaremos todavia.-->
+        <button type="reset">Tipo Reset</button>
+        <!--El boton de tipo reset resetea los datos del formulario dejando los valores predeterminados que tenia establecidos.-->
+        <button type="submit">Tipo Submit</button>
+        <!--El boton submit enviara el formulario a una direccion segun el metodo que que eleijamos (POST)-->
+        <!--Dentro del boton se puede incluir una imagen.-->
+
+    </form>
+</body>
+
+</html>
