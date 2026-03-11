@@ -1,0 +1,88 @@
+/*
+La propiedad float en CSS permite que un elemento "flote" a la izquierda o a la derecha dentro de su
+contenedor, haciendo que el texto y otros elementos se ajusten a su alrededor. Es útil para crear diseños
+donde se desea colocar elementos uno al lado del otro, pero puede requerir algunos ajustes para evitar
+problemas en el diseño.
+
+Valores de float:
+
+ left: El elemento flota a la izquierda de su contenedor
+
+ right:-El elemento flota a la derecha de su contenedor
+
+ none: El elemento no flota (se mostrará justo donde aparece en el texto). Este es el valor
+ predeterminado
+
+ inherit: El elemento hereda el valor float de su elemento primario
+*/
+
+/*Ejemplo de cajas flotantes*/
+body{
+    background-color: aquamarine;
+}
+
+div.Naranja{
+    width: 300px;                   /*Modifica el ancho de la caja*/
+    height: 300px;                  /*Modifica el alto de la caja*/
+    background-color: orangered;  /*Modifica el color de fondo de la caja*/
+    border: 1px solid black;      /*Crea un borde de un color determinado para la caja*/
+    float: left;                    /*Hace que una caja flote a un lado determinado*/
+    text-align: center;             /*Alinea el texto dentro de forma central  de la caja*/
+    justify-content: center;        /*Alinea los elementos en el eje principal*/
+    align-items: center;            /*Alinea los elementos en el eje secundario*/
+    display: flex;                  /*Convierte la caja en un contenedor flex, */
+    } 
+
+    /*Justify-content y align-items deben ir siempre para que el contenido de dentro de una caja
+    este siempre centrado*/
+
+    div.Verde{
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    border: 1px solid black;
+    float: right;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    }
+
+    div.Azul{
+    width: 300px;
+    height: 300px;
+    background-color: blue;
+    border: 1px solid black;
+    float: left;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    }
+
+    div.Rosa{
+    width: 300px;
+    height: 300px;
+    background-color: palevioletred;
+    border: 1px solid black;
+    float: right;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    }
+
+    div.Amarillo{
+    width: 300px;
+    height: 300px;
+    background-color: yellow;
+    border: 1px solid black;
+    float: left;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    }
+
+    
+

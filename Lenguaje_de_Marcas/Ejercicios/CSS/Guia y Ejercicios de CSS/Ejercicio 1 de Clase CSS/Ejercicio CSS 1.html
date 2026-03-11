@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Ejercicio CSS 1.css">
+</head>
+
+<body>
+    <header>
+        <h1>Titulo rojo (selector de tipos).</h1>
+    </header>
+
+    <section>
+        <p>Los párrafos son azules. Se usa un selector de tipos para
+            individualizarlos.</p>
+
+        <p class="invertido">Una clase de párrafo especial. La clase se llama "invertido" y
+            el selector es un selector de clases.El texto es blanco sobre
+            fondo negro.
+        </p>
+
+        <p class="colorido">Este párrafo usa otra clase llamada "colorido". El fondo es
+            amarillo y el texto es verde.Esta es una clase genérica que se
+            puede aplicar a cualquier elemento, no solamente a los
+            parrafos.
+        </p>
+
+        <p>Por ejemplo, una palabra en negrita (elemento B de HTML) se
+            verá así: <b>con negritas y texto azul,</b> pero un elemento B con el
+            atributo CLASS="colorido" se verá así: <b class="colorido">texto en negrita,
+            letras verdes y fondo amarillo.</b>
+        </p>
+
+        <p>Otro ejemplo.Esta es una lista de la clase "colorido" que tiene:</p>
+
+        <section>
+            <ul class="colorido">
+                <li>Texto en verde.</li>
+                <li>Fondo amarillo</li>
+            </ul>
+        </section>
+
+        <p>Pero en este caso apliquemos la clase "invertido" a una lista:</p>
+
+        <section>
+            <ul>
+                <li>Esta no tendrá ningún efecto porque la clase "invertido"
+                    se puede aplicar solo a parrafos.</li>
+            </ul>
+        </section>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+/*
+En Flexbox tenemos:
+Flexbox container: es el contenedor que contiene los elementos flexibles.
+Flexbox items: son los elementos flexibles dentro del flex container
+
+Propiedades del elemento padre (display: flex;)
+Tenemos varias propiedades que podemos poner en nuestro flex-container o elemento padre
+(Nota: en cada uno de ellos si tiene un valor predeterminado). 
+
+flexbox-direction: dirección en que distribuyen los elementos dentro del container, puede
+tomar los valores (column, column-reverse, row y row-reverse)
+column es de arriba a abajo de forma vertical.
+column reverse es igual pero al reves.
+row es es de izq a derecha en sentido horizontal.
+row reverse es igual a row pero en orden contrario.
+
+flexbox-wrap: especifica si los elementos puede saltar a la siguiente fila/columna si es
+necesario, puede tomar los valores (wrap, nowrap, wrap-reverse)
+
+flexbox-flow: es una combinación de flexbox-direction y flexbox-wrap, nos permite poner en
+una sola declaración los dos valores, ejemplo flexbox-flow: column wrap;
+
+justify-content: sirve para alinear el contenido, puede tomar los valores en sentiso horizontal (flex-start, flex-end,
+center, space-between, space-between, space-around y space-evenly)
+
+align-items: Alinea los items a lo largo del eje cruzado (vertical) (perpendicular al eje principal),
+puede tomar los valores (stretch, flex-start, flex-end, center y baseline)
+
+align-content: Controla la alineación de las líneas de elementos flexibles cuando hay
+múltiples líneas (solo se aplica si flex-wrap: wrap), puede tomar los valores (stretch, flexstart, flex-end, center y baseline)
+*/
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    padding: 50px;
+    background-color: aquamarine;
+    text-align: center;
+}
+/*Hace que el header se vea asi*/
+
+nav{
+    display: block;     /*Si pongo display: flex; automaticamente cuando encoja la pagina los enlaces se pondran uno debajo de otro*/
+    flex-direction: row;
+    background-color: #333;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+/*El nav al tener flex se adapta solo*/
+
+nav a{
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+    display: inline-block;
+}
+
+
+nav a:hover{
+    color: rgb(153, 255, 0);
+}
+
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+aside{
+    flex: 30px;
+    background-color: beige;
+    padding: 20px;
+}
+
+
+section{
+    flex: 70%;
+    background-color: khaki;
+    padding: 20px;
+}
+
+
+footer{
+    padding: 20px;
+    text-align: center;
+    background-color: palevioletred;
+}
+
+
+@media screen and (max-width: 700px){
+    nav, .row{
+        flex-direction: column;
+    }
+}

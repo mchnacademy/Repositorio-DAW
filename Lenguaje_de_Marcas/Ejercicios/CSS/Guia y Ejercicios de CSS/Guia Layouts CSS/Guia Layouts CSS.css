@@ -1,0 +1,43 @@
+/*
+Tenemos cinco formar posibles de hacer Layouts o maquetado de páginas Web:
+
+1) Tablas HTML (no recomendado): el elemento table no se creo para usarlo para crear layouts. Aunque
+fue el primer método que se uso para hacer diseños web en los inicios. No debemos usarlo
+
+2) CSS float: en una forma muy común de maquetar toda la web usando la propiedad de CSS float. Es fácil
+de aprender, pero en algunos casos no es todo lo flexible que necesitamos.
+
+3) CSS flexbox: es un nuevo sistema de layout desde CSS3. Se va ajustando a las diferentes resoluciones
+de pantalla. Pero no funciona con Internet Explorer 10.
+
+4) CSS Grid Layout: nos ofrece un layout basado en una rejilla con columnas y filas. Es fácil de posicionar
+los elementos. Pero no funciona con Internet Explorer 10 y Edge 15 o inferiores.
+
+5) CSS framework: es la forma más rápida de crear un layout, usando algún frameworks como lo es
+Bootstrap
+*/
+
+/*Tipos de Elementos en CSS:
+
+display: block   Sirve para ocupar todo el ancho disponible,estructura el contenido en secciones. (para div, section, article, h1, p).
+dispaly: inline  Sirve para ocupar solo el ancho del contenido, solo el ancho necesario. (solo para span o strong o cosas de linea).
+dispaly: inline-block     Sirve para combinar caracteristicas de ambas,permite solo. (casi todo, mas o menos).
+                          el ancho necesario y permite dimensiones especificas.*/
+
+body {
+  width: 500px;
+  margin: 0 auto;
+}
+
+p {
+  background: rgba(255, 84, 104, 0.3);
+  border: 2px solid rgb(255, 84, 104);
+  padding: 10px;
+  margin: 10px;
+}
+
+span {
+  background: white;
+  border: 1px solid black;
+}
+
