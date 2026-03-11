@@ -50,16 +50,7 @@
 
 - **Utilizacion de comandos para la implementación, eliminación y configuración de archivos en el Git:**
 
-
-
-
-
-<span style="color:red">ROJO</span>       color de letra.
-<span style="text-decoration:underline">Texto subrayado</span>    subrayado.
-
-
-
-  - 
+**(En Construccion...)**
 
 
   
