@@ -1,4 +1,4 @@
-<span style="text-decoration:underline"> # Prácticas de Entornos de Desarrollo y Lenguaje de Marcas 1ºDWA. </span>
+# Prácticas de Entornos de Desarrollo y Lenguaje de Marcas 1ºDWA.
 
 <span style="color:darkblue"><span style="text-decoration:underline"> ## ¿Que es un Git? </span></span>
 <span style="color:purple">- **Git es un sistema de control de versiones distribuido, gratuito y de código abierto, diseñado para rastrear cambios en el código fuente durante el desarrollo de software, asu vez, este permite crear repositorios de código donde se almacena todo el historial de modificaciones de tus archivos. Al realizar cambios en el código, se crea un "commit" que registra exactamente qué se modificó, cuando se modificó y quién lo modificó.** </span>
