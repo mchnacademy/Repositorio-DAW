@@ -2,7 +2,7 @@
 
 ## ¿Que es un Git?
 
-- Git es un sistema de control de versiones distribuido, gratuito y de código abierto, diseñado para rastrear cambios en el código fuente durante el desarrollo de software, asu vez, este permite crear repositorios de código donde se almacena todo el historial de modificaciones de tus archivos. Al realizar cambios en el código, se crea un "commit" que registra exactamente qué se modificó, cuando se modificó y quién lo modificó.**
+- Git es un sistema de control de versiones distribuido, gratuito y de código abierto, diseñado para rastrear cambios en el código fuente durante el desarrollo de software, asu vez, este permite crear repositorios de código donde se almacena todo el historial de modificaciones de tus archivos. Al realizar cambios en el código, se crea un "commit" que registra exactamente qué se modificó, cuando se modificó y quién lo modificó.
 
 - En este repositorio se albergaran todas las **prácticas, ejercicios y proyectos** realizados durante el curso de **Entornos de Desarrollo** y **Lenguaje de Marcas y SGI**, con el objetivo de aprender y emplear herramientas de programación, control de versiones y desarrollo web básico.
 
@@ -21,6 +21,7 @@
   - CSS: estilos y diseño visual.
   - Proyectos de práctica integrando HTML y CSS.
   - Actividades de XML/DTD.
+  - Actividades de SXD.
 
 - **Archivos Adicionales**
   - Documentos PDF y presentaciones de prácticas.
@@ -43,14 +44,47 @@
   - Al entrar por primera vez en Git Bash se nos situara en la rama main (principal) del repositorio, allí solo dejaremos el archivo README.md, si queremos añadir archivos sera mejor hacerlo en una rama diferente (branches), para poder crearla usaremos el comando **"git branch (nombre_rama)"**, y **"git checkout (nombre_rama)"** para posicionarnos en ella para añadir los trabajos directamente.
   - Tambien se podria emplear el comando **"git checkout -b (nombre_rama)"**, que creara la rama y nos posicionara directamente en ella.
   - Para verificar que estamos en la rama correcta usaremos el comando **"git branch"**, este nos dira en que rama nos encontramos.
-  - Una vez dentro de la rama indicada emplearemos el comando **"git add (nombre_archivo)"** para añadir un archivo/trabajo/proyecto especifico al repositorio, aunque tambien se puede emplear el comando **"git add ."** para añadir todos los archivos directamente, <span style="color:red">pero ojo</span>, para que este comando funcione es necesario que todos los archivos que queramos meter se encuentren dentro de la carpeta donde se inicio el git (al ejecutar el Git Bash).
+  - Una vez dentro de la rama indicada emplearemos el comando **"git add (nombre_archivo)"** para añadir un archivo/trabajo/proyecto especifico al repositorio, aunque tambien se puede emplear el comando **"git add ."** para añadir todos los archivos directamente, pero ojo, para que este comando funcione es necesario que todos los archivos que queramos meter se encuentren dentro de la carpeta donde se inicio el git (al ejecutar el Git Bash).
   - En caso de equivocarnos y querer deshacer un add podemos utilizar el comando **"git reset (nombre_archivo)"** para un solo archivo en especifico o **"git reset"** para todos los archivos.
   - Para confirmar los cambios se utiliza el comando **"git commit -m ("Aquí explicas qué trabajos/cambios añadiste")"** y despues **"git push -u origin (nombre-rama)"** para subir la rama al repositorio remoto (solo si es la primera vez) o **"git push"** si ya se habia añadido antes la rama al repositorio remoto.
 
+- **Utilizacion de Pull request:**
 
-- **Utilizacion de comandos para la implementación, eliminación y configuración de archivos en el Git:**
+  - Un Pull Request es una solicitud que se hace para proponer que los cambios realizados en una rama se integren en otra rama, normalmente en la rama principal (main), lo que facilita revisar el codigo y mantener organizado el trabajo.
 
-**(En Construccion...)**
+  - Primero se crea una rama para trabajar usando el comando **"git checkout -b (nombre_rama)"**, a continuacion añadimos los trabajos que queramos y los guardamos con los siguientes comandos **"git add . y 
+git commit -m "Descripción de los cambios""**, y por ultimo añadimos la rama creada a GitHub con **"git push -u origin nombre_rama"**.
+
+  - Posteriormente haremos los siguientes pasos:
+
+    - Ir al repositorio en GitHub, una vez lo tengamos creado.
+
+    - Allí aparecerá un botón que dice Compare & Pull Request.
+
+    - Hacemos clic en el boton.
+
+    - Escribimos una descripcion de los cambios.
+
+    - Y pulsamos Create Pull Request.
+
+  - Ahora otros usuarios pueden revisar el código antes de aceptarlo, mpara asegurarse de que no hay ningun error crítico.
+
+- **Utilizacion de Merge:**
+
+  - Un Merge es la acción de unir o fusionar los cambios de una rama con otra dentro de un repositorio de Git, sirve para implementar cambios en una rama en especifico o en la misma main.
+ 
+  - Para realizarlo haremos los siguientes pasos:
+ 
+    - Revisar los cambios.
+
+    - Pulsar Merge Pull Request.
+
+    - Confirmar con Confirm Merge.
+   
+  - Esto unirá las dos ramas implicadas.
+ 
+  
+  
 
 
   
