@@ -1,0 +1,20 @@
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Temporales
+*.log
+*.tmp
+.DS_Store
+
+# Binarios
+*.class
+*.exe
+*.out
+*.jar
+
+# Carpetas de compilación
+bin/
+build/
+dist/
