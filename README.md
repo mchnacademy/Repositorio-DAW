@@ -182,7 +182,7 @@ git commit -m "Descripción de los cambios""**, y por ultimo añadimos la rama c
 
 
 
-![Texto alternativo](images/tu-imagen.png)
+![¡Muchas gracias por ver!](images/foto.png)
   
   
 
