@@ -1,4 +1,4 @@
-# Prácticas de Entornos de Desarrollo y Lenguaje de Marcas 1ºDWA.
+✨# Prácticas de Entornos de Desarrollo y Lenguaje de Marcas 1ºDWA.✨
 
 ## ¿Que es un Git?
 
@@ -53,7 +53,7 @@
 
 ## Uso de comandos claves para la elaboreacion del repositorio:
  
-- **Utilizacion de Commits:**
+- **Utilizacion de Commits:** 💾
 
   - Un commit es como un “fotograma” de tu proyecto, se encarga de guardar los cambios que hiciste en tu código en un momento determinado.Cada commit tiene un mensaje que explica que cambios se han hecho y un id unico que permite volver a ese estado previo.
 
@@ -65,7 +65,7 @@
  
   - Este ultimo paso se hace debido a que al trabajar en Git Bash, todos los cambios y ajustes que hagamos no se implementaran instantaneamente en el repositorio remoto (el de GitHub), ya que nosotros estamos trabajando en una version clonada del original, hecha para organizar y optimizar el funcionamiento del repositorio. Por ello, debemos emplear varios comando, para que si se registre en el repositorio remoto.
  
-- **Creacion y utilizaccion de ramas:**
+- **Creacion y utilizaccion de ramas (branches):** 🌿
 
   - Una rama es como una línea paralela de desarrollo en la que puedes hacer cambios sin afectar a la rama principal (main), ideal para probar cosas nuevas y para corregir errores.
  
@@ -77,7 +77,7 @@
  
   - Si quisiesemos volver a la rama main (principal) usariamos **"git checkout main"**.
 
-- **Utilizacion de Pull request:**
+- **Utilizacion de Pull request:** 📬
 
   - Un Pull Request es una solicitud que se hace para proponer que los cambios realizados en una rama se integren en otra rama, normalmente en la rama principal (main), lo que facilita revisar el codigo y mantener organizado el trabajo.
 
@@ -98,7 +98,7 @@ git commit -m "Descripción de los cambios""**, y por ultimo añadimos la rama c
 
   - Ahora otros usuarios pueden revisar el código antes de aceptarlo, mpara asegurarse de que no hay ningun error crítico.
 
-- **Utilizacion de Merge:**
+- **Utilizacion de Merge:** 🔀
 
   - Un Merge es la acción de unir o fusionar los cambios de una rama con otra dentro de un repositorio de Git, sirve para implementar cambios en una rama en especifico o en la misma main.
  
@@ -114,7 +114,7 @@ git commit -m "Descripción de los cambios""**, y por ultimo añadimos la rama c
  
   - Si queremos hacerlo desde Git Bash usaremos el comando **"git checkout main"** para situarnos en el main y luego usaremos el comando **"git merge (nombre_rama)"** para fusionar los cambios.
  
-- **Creacion de archivo .gitignore:**
+- **Creacion de archivo .gitignore:** 🚫
 
   - Un .gitignore es un archivo que le dice a Git y a GitHub qué archivos NO deben subirse al repositorio. Esto se usa para evitar subir cosas innecesarias como configuraciones personales, archivos temporales o binarios.
  
@@ -132,7 +132,7 @@ git commit -m "Descripción de los cambios""**, y por ultimo añadimos la rama c
    
     - Por ultimo le das a Commit new file.
    
-- **Conflicto de fusion:**
+- **Conflicto de fusion:** ⚠️
 
   - Un conflicto de fusión ocurre cuando Git no puede combinar automáticamente los cambios de dos ramas porque modificaron la misma línea en el mismo archivo.
  
@@ -166,7 +166,7 @@ git commit -m "Descripción de los cambios""**, y por ultimo añadimos la rama c
    
     - En resumen, un conflicto son cambios incompatibles que ocurren en una misma linea cuando se modifica un archivo en dos ramas diferente y se intenta fusionarlas, y para solucionarlo hay que editar el archivo y elegir que modificacion se quedara y cual no, y confirmar los cambios.
    
-- **Version final:**
+- **Version final:** 🏁
 
   - La “versión final” de un proyecto es básicamente el estado del proyecto que consideras completo y listo para entregar o publicar.
  
@@ -176,11 +176,13 @@ git commit -m "Descripción de los cambios""**, y por ultimo añadimos la rama c
  
 ---
 
-## Participantes del grupo:
+## Participantes del grupo: 📖
 
- - Trabajo realizado por Guido, Chen, Samuel y Dennis, alumnos de 1ºDWA IES. Clara del Rey  2025/2026.
+ - Trabajo realizado por 👑Guido, 👑Chen, 👑Samuel y 👑Dennis, alumnos de 1ºDWA IES. Clara del Rey  2025/2026.
 
 
+
+![Texto alternativo](images/tu-imagen.png)
   
   
 
