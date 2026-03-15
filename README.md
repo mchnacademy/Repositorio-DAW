@@ -182,7 +182,7 @@ git commit -m "Descripción de los cambios""**, y por ultimo añadimos la rama c
 
 
 
-![¡Muchas gracias por ver!](Images/foto.jpg)
+![¡Muchas gracias por ver!](https://github.com/mchnacademy/Repositorio-DAW/Images/foto.jpg)
   
   
 
