@@ -6,6 +6,7 @@
 
 - En este repositorio se albergaran todas las **prácticas, ejercicios y proyectos** realizados durante el curso de **Entornos de Desarrollo** y **Lenguaje de Marcas y SGI**, con el objetivo de aprender y emplear herramientas de programación, control de versiones y desarrollo web básico.
 
+---
 
 ## Contenido del repositorio:
 
@@ -47,6 +48,22 @@
   - Una vez dentro de la rama indicada emplearemos el comando **"git add (nombre_archivo)"** para añadir un archivo/trabajo/proyecto especifico al repositorio, aunque tambien se puede emplear el comando **"git add ."** para añadir todos los archivos directamente, pero ojo, para que este comando funcione es necesario que todos los archivos que queramos meter se encuentren dentro de la carpeta donde se inicio el git (al ejecutar el Git Bash).
   - En caso de equivocarnos y querer deshacer un add podemos utilizar el comando **"git reset (nombre_archivo)"** para un solo archivo en especifico o **"git reset"** para todos los archivos.
   - Para confirmar los cambios se utiliza el comando **"git commit -m ("Aquí explicas qué trabajos/cambios añadiste")"** y despues **"git push -u origin (nombre-rama)"** para subir la rama al repositorio remoto (solo si es la primera vez) o **"git push"** si ya se habia añadido antes la rama al repositorio remoto.
+ 
+---
+
+## Uso de comandos claves para la elaboreacion del repositorio:
+ 
+- **Utilizacion de Commit:**
+
+  - Un commit es como un “fotograma” de tu proyecto, se encarga de guardar los cambios que hiciste en tu código en un momento determinado.Cada commit tiene un mensaje que explica que cambios se han hecho y un id unico que permite volver a ese estado previo.
+
+  - Una vez ejecutado el comando **"git add ."** para agregar trabajos a un repositorio, debemos emplear el comando **"git commit -m (Mensaje que explique los cambios)"** para confirmar los cambios.
+ 
+  - Despues podemos usar los comando **"git status"** y **"git log"** para mostrar el estado de los archivos y todos los commits que se han realizado.
+ 
+  - Por ultimo, para subir nuestros commits a GitHub al repositorio remoto (el original) usaremos el comando **"git push origin main"** o **"git push origin (nombre_rama)"** para agrgar los cambios al main o a otra rama.
+ 
+  - Este ultimo paso se hace debido a que al trabajar en Git Bash, todos los cambios y ajustes que hagamos no se implementaran instantaneamente en el repositorio remoto (el de GitHub), ya que nosotros estamos trabajando en una version clonada del original, hecha para organizar y optimizar el funcionamiento del repositorio. Por ello, debemos emplear varios comando, para que si se registre en el repositorio remoto.
 
 - **Utilizacion de Pull request:**
 
