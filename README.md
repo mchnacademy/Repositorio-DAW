@@ -32,7 +32,7 @@
 
 ## Instrucciones de uso y tips:
 
-- **Primros pasos: Creacion de un Git.**
+- **Primeros pasos: Creacion de un Git.**
 
   - Lo primero que necesitaremos será tener una cuenta de GitHub, en la cual se  mostrara el git que crearemos, e instalar **Git GUI y Git Bash**, donde introduciremos los comandos necesarios para empezar a crear nuestro Git.
   - Una vez creada la cuenta de GitHub y descargado Git Bash y Git GUI, nos dirigiremos a la esquina superior izquierda y le daremos a un boton de color rojo, el cual nos permitira crear nuestro repositorio.
@@ -53,7 +53,7 @@
 
 ## Uso de comandos claves para la elaboreacion del repositorio:
  
-- **Utilizacion de Commit:**
+- **Utilizacion de Commits:**
 
   - Un commit es como un “fotograma” de tu proyecto, se encarga de guardar los cambios que hiciste en tu código en un momento determinado.Cada commit tiene un mensaje que explica que cambios se han hecho y un id unico que permite volver a ese estado previo.
 
@@ -64,13 +64,25 @@
   - Por ultimo, para subir nuestros commits a GitHub al repositorio remoto (el original) usaremos el comando **"git push origin main"** o **"git push origin (nombre_rama)"** para agrgar los cambios al main o a otra rama.
  
   - Este ultimo paso se hace debido a que al trabajar en Git Bash, todos los cambios y ajustes que hagamos no se implementaran instantaneamente en el repositorio remoto (el de GitHub), ya que nosotros estamos trabajando en una version clonada del original, hecha para organizar y optimizar el funcionamiento del repositorio. Por ello, debemos emplear varios comando, para que si se registre en el repositorio remoto.
+ 
+- **Creacion y utilizaccion de ramas:**
+
+  - Una rama es como una línea paralela de desarrollo en la que puedes hacer cambios sin afectar a la rama principal (main), ideal para probar cosas nuevas y para corregir errores.
+ 
+  - Para crear una rama desde Git Bash usaremos el comando **"git branch (nombre_rama)"**, y para posicionarnos en ella usaremos **"git checkout (nombre_rama)"**, tras ello ya podremos subir nuestros proyectos a esa rama.
+ 
+  - Para subir la rama a GitHub y que sea visible para todos usaremos el comando **"git push origin (nombre_rama)"**.
+ 
+  - Si queremos ver las ramas existentes en nuestro repositorio podemos usar **"git branch"**, que mostrará en que rama estamos y listara las demas.
+ 
+  - Si quisiesemos volver a la rama main (principal) usariamos **"git checkout main"**.
 
 - **Utilizacion de Pull request:**
 
   - Un Pull Request es una solicitud que se hace para proponer que los cambios realizados en una rama se integren en otra rama, normalmente en la rama principal (main), lo que facilita revisar el codigo y mantener organizado el trabajo.
 
   - Primero se crea una rama para trabajar usando el comando **"git checkout -b (nombre_rama)"**, a continuacion añadimos los trabajos que queramos y los guardamos con los siguientes comandos **"git add . y 
-git commit -m "Descripción de los cambios""**, y por ultimo añadimos la rama creada a GitHub con **"git push -u origin nombre_rama"**.
+git commit -m "Descripción de los cambios""**, y por ultimo añadimos la rama creada a GitHub con **"git push -u origin (nombre_rama)"**.
 
   - Posteriormente haremos los siguientes pasos:
 
@@ -100,6 +112,75 @@ git commit -m "Descripción de los cambios""**, y por ultimo añadimos la rama c
    
   - Esto unirá las dos ramas implicadas.
  
+  - Si queremos hacerlo desde Git Bash usaremos el comando **"git checkout main"** para situarnos en el main y luego usaremos el comando **"git merge (nombre_rama)"** para fusionar los cambios.
+ 
+- **Creacion de archivo .gitignore:**
+
+  - Un .gitignore es un archivo que le dice a Git y a GitHub qué archivos NO deben subirse al repositorio. Esto se usa para evitar subir cosas innecesarias como configuraciones personales, archivos temporales o binarios.
+ 
+  - Para crearlo haremos lo siguienet:
+
+    - Ve a tu repositorio en GitHub.
+   
+    - Haz clic en Add file.
+   
+    - Selecciona Create new file.
+   
+    - Nombra el archivo como .gitignore.
+   
+    - Y dentro pones los archivos que se ignoraran.
+   
+    - Por ultimo le das a Commit new file.
+   
+- **Conflicto de fusion:**
+
+  - Un conflicto de fusión ocurre cuando Git no puede combinar automáticamente los cambios de dos ramas porque modificaron la misma línea en el mismo archivo.
+ 
+  - Para provocarlo haremos lo siguiente:
+
+    - Usaremos git checkout -b rama1.
+      
+    - Ahora git checkout main.
+      
+    - Y por ultimo git checkout -b rama2.
+   
+    - Ahora haremos los commits desde cada rama:
+
+      - git add README.md (desde la rama 1).
+     
+      - git commit -m "Cambios desde rama1" (desde la erama 1).
+     
+      - git add README.md (desde la rama 2).
+     
+      - git commit -m "Cambios desde rama2" (desde la rama 2).
+
+    - Ahora trataremos de fusionarlas:
+
+      - git checkout rama1.
+     
+      - git merge rama2.
+     
+    - Y de la nada Git detectara un conflicto (cambios incompatibles en una misma linea).
+   
+    - Para solucionarlo solo tendremo que editar el archivo conflictivo ( en este caso el readme) y decidir que se quedara y que no, y emplear de nuevo **"git add"** y **"git commit"**.
+   
+    - En resumen, un conflicto son cambios incompatibles que ocurren en una misma linea cuando se modifica un archivo en dos ramas diferente y se intenta fusionarlas, y para solucionarlo hay que editar el archivo y elegir que modificacion se quedara y cual no, y confirmar los cambios.
+   
+- **Version final:**
+
+  - La “versión final” de un proyecto es básicamente el estado del proyecto que consideras completo y listo para entregar o publicar.
+ 
+  - Para crear iremos a GitHub y haremos clic en release y le daremos a crete new release, despues solo crearemos un tag con el nombre "v1.0-entrega" y rellenaremos de manera automatica el contenido.
+ 
+  - Por ultimo aceptaremos los cambios y ya estaria disponible para visualizarlo.
+ 
+---
+
+## Participantes del grupo:
+
+ - Trabajo realizado por Guido, Chen, Samuel y Dennis, alumnos de 1ºDWA IES. Clara del Rey  2025/2026.
+
+
   
   
 
