@@ -182,7 +182,12 @@ git commit -m "Descripción de los cambios""**, y por ultimo añadimos la rama c
 
 
 
-![¡Muchas gracias por ver!](https://github.com/mchnacademy/Repositorio-DAW/raw/main/Images/foto.jpg)
+<div align="center">
+  <img src=https://i.pinimg.com/originals/33/1d/6d/331d6d029a5a93396cc9a0a5a75cfe74.jpg>
+  <img src=https://i.pinimg.com/originals/33/41/c1/3341c10a07672ef6b5d57cb968c7b544.jpg>
+  <img src=https://i.pinimg.com/736x/4d/32/e7/4d32e7b9518224e552845fc4581631fd.jpg>
+  <img src=https://static.tvtropes.org/pmwiki/pub/images/samsprattblues.png>
+</div>
   
   
 
