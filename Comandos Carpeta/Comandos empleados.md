@@ -28,11 +28,6 @@
 
 ---
 
-## Comandos tops:
-
-- xd
-- 
-
 
 
 
